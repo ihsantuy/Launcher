@@ -578,10 +578,11 @@
           run: |
             set -x
             pwd
-            mkdir -p ~/artifacts
-            cp -f ~/LauncherArtifacts/*/*.bin ~/artifacts
-            cp -f ~/LauncherArtifacts/*/*.json ~/artifacts
-            cp -f ~/file.html ~/artifacts
+            mkdir -p artifacts
+            cp -f ~/LauncherArtifacts/*/*.bin artifacts
+            cp -f ~/LauncherArtifacts/*/*.json artifacts
+            cp -f ~/file.html artifacts
+            tree
 
         - name: Ensure releases exist and get IDs
           id: get_release
@@ -643,8 +644,7 @@
           with:
             name: betaRelease commit (${{ steps.get_sha.outputs.GITHUB_SHA_SHORT }})
             tag_name: beta
-            prerelease: true
-            files: ~/artifacts/**
+            files: artifacts/**
             fail_on_unmatched_files: false
             make_latest: false
             generate_release_notes: false
