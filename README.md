@@ -65,7 +65,7 @@ Application Launcher for M5Stack, Lilygo, CYDs, Marauder and ESP32 devices.
 * You can learn more about how it works o [Launcher Wiki](https://github.com/bmorcelli/Launcher/wiki/Explaining-the-project).
 * Where/How do I find Binaries to launch -> [Obtaining binaries to launch](https://github.com/bmorcelli/Launcher/wiki/Obtaining-binaries-to-launch)
 * Now you can download binaries from [HERE!](https://bmorcelli.github.io/Launcher/m5lurner.html)
-
+</details>
 
 ## Known Issues
 * UiFlow 1 doesn´t work with Launcher.. it uses an old MicroPython distro, that uses an old ESP-IDF distro with lots os secrets that I couldn´t figure out.
@@ -260,3 +260,4 @@ Things that needs to be done in next updates
 * 1.0.1:
      * Fixed blackscreen and keyboard capture on Cardputer.
 </details>
+
