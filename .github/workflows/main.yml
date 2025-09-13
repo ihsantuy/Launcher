@@ -675,7 +675,7 @@
             name: lastRelease commit (${{ steps.get_sha.outputs.GITHUB_SHA_SHORT }})
             tag_name: last
             prerelease: true
-            files: ~/artifacts/**
+            files: artifacts/**
             fail_on_unmatched_files: false
             make_latest: false
             generate_release_notes: false
