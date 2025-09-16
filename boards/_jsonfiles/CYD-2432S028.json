@@ -8,7 +8,8 @@
       "-DARDUINO_ESP32_DEV",
       "-DCYD_2432S028",
       "-DARDUINO_RUNNING_CORE=1",
-      "-DARDUINO_EVENT_RUNNING_CORE=1"
+      "-DARDUINO_EVENT_RUNNING_CORE=1",
+      "-DBOARD_HAS_PSRAM"
     ],
     "f_cpu": "240000000L",
     "f_flash": "40000000L",
@@ -29,11 +30,11 @@
     "arduino",
     "espidf"
   ],
-  "name": "Espressif ESP32 Dev Module",
+  "name": "Espressif ESP32 Dev Module (16MB)",
   "upload": {
     "flash_size": "16MB",
     "maximum_ram_size": 327680,
-    "maximum_size": 4194304,
+    "maximum_size": 16777216,
     "require_upload_port": true,
     "speed": 460800
   },
