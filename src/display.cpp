@@ -153,7 +153,7 @@ void TouchFooter2(uint16_t color) {
 void initDisplay(bool doAll) {
 #ifndef HEADLESS
     static uint8_t _name = random(0, 3);
-    String name = "@Pirata";
+    String name = "@cihuyyy";
     String txt;
     int cor, _x, _y, show;
 
@@ -1328,3 +1328,4 @@ uint16_t getComplementaryColor(uint16_t color) {
     int b = 31 - (color & 0x1F);
     return (r << 11) | (g << 5) | b;
 }
+
