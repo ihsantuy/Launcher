@@ -164,8 +164,8 @@ void initDisplay(bool doAll) {
     tft->stopCallback();
 #endif
 
-    if (_name == 1) name = "u/bmorcelli";
-    else if (_name == 2) name = "gh/bmorcelli";
+    if (_name == 1) name = "@Cihuyyy";
+    else if (_name == 2) name = "@Cihuyyy";
     tft->drawRoundRect(3, 3, tftWidth - 6, tftHeight - 6, 5, FGCOLOR);
     tft->setTextSize(FP);
     tft->setCursor(10, 10);
@@ -1328,5 +1328,6 @@ uint16_t getComplementaryColor(uint16_t color) {
     int b = 31 - (color & 0x1F);
     return (r << 11) | (g << 5) | b;
 }
+
 
 
