@@ -220,9 +220,9 @@ void initDisplay(bool doAll) {
     tft->setTextSize(FG);
     tft->setTextColor(FGCOLOR);
 #if TFT_HEIGHT > 200
-    tft->drawCentreString("Launcher", tftWidth / 2, tftHeight / 2 - 10, 1);
+    tft->drawCentreString("Cihuyyy", tftWidth / 2, tftHeight / 2 - 10, 1);
 #else
-    tft->drawCentreString("Launcher", tftWidth / 2, tftHeight / 2 - 10, 1);
+    tft->drawCentreString("Cihuyyy", tftWidth / 2, tftHeight / 2 - 10, 1);
 #endif
     tft->setTextSize(FG);
     tft->setTextColor(FGCOLOR);
@@ -1328,4 +1328,5 @@ uint16_t getComplementaryColor(uint16_t color) {
     int b = 31 - (color & 0x1F);
     return (r << 11) | (g << 5) | b;
 }
+
 
